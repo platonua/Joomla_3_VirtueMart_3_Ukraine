@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<extension version="3.0" type="plugin" group="vmpayment" method="upgrade">
+    <name>Platon</name>
+    <creationDate>05-Jan-2016</creationDate>
+    <author>Platon</author>
+    <authorEmail>support@platonline.com</authorEmail>
+    <authorUrl>https://www.platononline.com</authorUrl>
+    <copyright>Copyright Platon</copyright>
+    <license>http://www.gnu.org/licenses/gpl-3.0.html GNU/GPL</license>
+    <version>3.0</version>
+    <element>Platon</element>
+    <description><![CDATA[<h2>Virtuemart 3 Plugin for Platon Payment Gateway</h2> ]]>
+    </description>
+    <languages folder="languages">
+        <language tag="en-GB" client="administrator">en-GB.plg_vmpayment_platon.ini</language>
+        <language tag="ru-RU" client="administrator">ru-RU.plg_vmpayment_platon.ini</language>
+    </languages>
+    <scriptfile>script.php</scriptfile>
+    <files>
+        <filename plugin="platon">platon.php</filename>
+        <filename>index.html</filename>
+    </files>
+	<vmconfig>
+        <fields name="params">
+			<fieldset name="basic" addfieldpath="/plugins/vmpayment/platon/fields">			
+				<field name="gateway_url" class="required" type="text" size="50" default="https://secure.platononline.com/payment/auth"
+						   label="VMPAYMENT_PLATON_GATEWAY_URL" description="VMPAYMENT_PLATON_GATEWAY_URL_DESC"/>
+				<field type="text" class="required" name="key" size="50" default=""
+					   label="VMPAYMENT_PLATON_KEY" description="VMPAYMENT_PLATON_KEY_DESC"/>
+				<field type="text"  class="required" name="password" size="50" default=""
+					   label="VMPAYMENT_PLATON_PASSWORD" description="VMPAYMENT_PLATON_PASSWORD_DESC"/>
+			</fieldset>
+        </fields>
+    </vmconfig>
+</extension>
