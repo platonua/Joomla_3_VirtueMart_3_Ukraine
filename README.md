@@ -1,5 +1,10 @@
 # Модуль Joomla 3 VirtueMart 3 для Украины
 
+## Чеклист интеграции:
+- [x] Установить модуль.
+- [x] Передать тех поддержке PSP Platon  ссылку для коллбеков.
+- [x] Провести оплату используя тестовые реквизиты.
+
 ## Установка:
 
 * В админ панеле перейдите в Extensions → Manage → Install.
@@ -17,6 +22,11 @@
 * Перейдите в раздел "Configuration" на этой же странице. Введите ключ и пароль.
 
 * Вернитесь в "Payment Method Information" и укажите "Published" в значение "Yes". Нажмите "Save". Появится сообщение "Payment Method successfully saved".
+
+## Иностранные валюты:
+Готовые CMS модули PSP Platon по умолчанию поддерживают только оплату в UAH.
+
+Если необходимы иностранные валюты необходимо провести правки модуля вашими программистами согласно раздела [документации](https://platon.atlassian.net/wiki/spaces/docs/pages/1810235393).
 
 ## Ссылка для коллбеков:
 https://ВАШ_САЙТ/index.php?option=com_virtuemart&view=pluginresponse&task=pluginnotification&tmpl=component
